@@ -1,0 +1,37 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Jumlah Kata</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        padding: 10px;
+      }
+      textarea, button {
+        padding: 10px;
+        margin: 8px;
+        font-size: 16px;
+        width: 300px;
+      }
+      #hasil {
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+  <h2>Hitung Jumlah Kata dalam Kalimat</h2>
+  <textarea id="kalimat" rows="4" placeholder="Masukkan kalimat di sini..."></textarea>
+  <button onclick="hitungKata()">Hitung Kata</button>
+  <div id="hasil"></div>
+  <script src="jumlah.js"></script>
+</body>
+</html>

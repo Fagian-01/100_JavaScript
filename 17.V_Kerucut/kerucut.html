@@ -1,0 +1,39 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Volume Kerucut</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      padding: 40px;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      font-size: 16px;
+    }
+    p {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+  <h2>Menghitung Volume Kerucut</h2>
+  <label for="radius">Masukkan jari-jari (r):</label><br />
+  <input type="number" id="jari" placeholder="Contoh: 10" /><br />
+  <label for="radius">Masukkan Tinggi (t):</label><br />
+  <input type="number" id="tinggi" placeholder="Contoh: 10" /><br />
+  <button onclick="hitung()">Hitung</button>
+  <p id="hasil"></p>
+  
+  <script src="kerucut.js"></script>
+</body>
+</html>

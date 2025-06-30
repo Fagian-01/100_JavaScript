@@ -1,0 +1,34 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ulang Kalimat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      padding: 40px;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ulangi Kalimat</h2>
+  <label for="jumlah">Masukkan jumlah perulangan:</label>
+  <input type="number" id="jumlah" min="1" /><br><br>
+  <label for="kalimat">Masukkan kalimat yang ingin diulang:</label>
+  <input type="text" id="kalimat" /><br><br>
+  <button onclick="ulangKalimat()">Tampilkan</button>
+  <div id="output" style="margin-top: 20px;"></div>
+
+  <script src="berulang.js"></script>
+</body>
+</html>

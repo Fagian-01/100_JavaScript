@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sederhana</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            width: 250px;
+            cursor: pointer;
+        }
+        #hasil {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <h2>Siapakah pencipta Python?</h2>
+  <button onclick="cekJawaban('A')">A. Rafa Khadafi</button>
+  <button onclick="cekJawaban('B')">B. Adolf Hitler</button>
+  <button onclick="cekJawaban('C')">C. Guido Van Rossum</button>
+  <button onclick="cekJawaban('D')">D. Michael Jackson</button>
+  <div id="hasil"></div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

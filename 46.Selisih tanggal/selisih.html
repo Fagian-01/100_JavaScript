@@ -1,0 +1,62 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Selisih Tanggal</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        max-width: 320px;
+        width: 100%;
+      }
+      input, button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .result {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Kalkulator Selisih Tanggal</h3>
+    <input type="date" id="tanggal1">
+    <input type="date" id="tanggal2">
+    <button onclick="hitungSelisihTanggal()">Hitung Selisih Hari</button>
+    <div id="hasil" class="result"></div>
+  </div>
+  
+  <script src="selisih.js"></script>
+</body>
+</html>
