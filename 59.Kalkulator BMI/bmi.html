@@ -1,0 +1,42 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung BMI</title>
+    <style>
+        body { 
+          font-family: sans-serif; 
+          background: #e7f1ff; 
+          text-align: center; 
+          padding: 50px; 
+        }
+        input, button { 
+          padding: 10px; 
+          margin: 5px; 
+          font-size: 16px;
+        }
+        button { 
+          background: #0d6efd; 
+          color: white; 
+          border: none; 
+          border-radius: 4px; 
+          cursor: pointer; 
+        }
+        button:hover { 
+          background: #0a58ca; 
+        }
+    </style>
+</head>
+<body>
+
+  <h2>Kalkulator BMI</h2>
+    <input type="number" id="berat" placeholder="Berat (kg)">
+    <input type="number" id="tinggi" placeholder="Tinggi (cm)">
+    <button onclick="hitungBMI()">Hitung BMI</button>
+    <p id="hasil"></p>
+
+    <script src="bmi.js"></script>
+</body>
+</html>

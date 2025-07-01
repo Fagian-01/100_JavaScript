@@ -1,0 +1,63 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Balap Kuda</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: linear-gradient(to bottom right, #fceabb, #f8b500);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: left;
+            width: 400px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 10px 5px;
+            font-size: 1em;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background-color: #27ae60;
+            color: white;
+        }
+        button:hover {
+            background-color: #1e8449;
+        }
+        #hasil {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .track {
+            font-family: monospace;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Game Balap Kuda</h2>
+        <p>Tekan "Langkah Berikutnya" untuk memulai balapan.</p>
+        <div id="track1" class="track"></div>
+        <div id="track2" class="track"></div>
+        <div id="track3" class="track"></div>
+        <button onclick="langkah()">Langkah Berikutnya</button>
+        <button onclick="resetGame()">Reset</button>
+        <div id="hasil"></div>
+    </div>
+
+    <script src="balap.js"></script>
+</body>
+</html>

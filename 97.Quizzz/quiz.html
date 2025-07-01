@@ -1,0 +1,84 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+            width: 350px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            font-size: 1em;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .question {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .option {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background: #ecf0f1;
+            color: black;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .option:hover {
+            background: #bdc3c7;
+        }
+        #score {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="menu">
+        <h2>Kuis Sederhana</h2>
+        <button onclick="mulaiKuis()">Mulai Kuis</button>
+        <button onclick="keluar()">Keluar</button>
+    </div>
+
+    <div class="container" id="kuisContainer" style="display:none;">
+        <div class="question" id="pertanyaan"></div>
+        <div id="pilihan"></div>
+    </div>
+
+    <div class="container" id="hasilContainer" style="display:none;">
+        <h2>Kuis Selesai!</h2>
+        <div id="score"></div>
+        <button onclick="ulangKuis()">Ulangi Kuis</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

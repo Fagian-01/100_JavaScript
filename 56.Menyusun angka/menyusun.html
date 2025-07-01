@@ -1,0 +1,41 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menyusun Angka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8fafc;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        #hasil {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Menyusun 5 Angka</h2>
+    <input type="number" id="angka1" placeholder="Masukkan angka ke-1">
+    <input type="number" id="angka2" placeholder="Masukkan angka ke-2">
+    <input type="number" id="angka3" placeholder="Masukkan angka ke-3">
+    <input type="number" id="angka4" placeholder="Masukkan angka ke-4">
+    <input type="number" id="angka5" placeholder="Masukkan angka ke-5">
+    <button onclick="susunAngka()">Susun Angka</button>
+    <div id="hasil"></div>
+
+    <script src="menyusun.js"></script>
+</body>
+</html>

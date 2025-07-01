@@ -1,0 +1,37 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Klik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f4f8;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 18px;
+        }
+        #hasil {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Counter Klik</h2>
+    <button onclick="tambahKlik()">Klik</button>
+    <button onclick="resetKlik()">Reset</button>
+    <div id="hasil">Jumlah klik: 0</div>
+
+    <script src="click.js"></script>
+</body>
+</html>

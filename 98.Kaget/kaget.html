@@ -1,0 +1,45 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Don't Click...</title>
+  <style>
+    body {
+      background-color: purple;
+      color: white;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      margin-top: 100px;
+    }
+
+    #jumpscare {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 9999;
+    }
+
+    #jumpscare img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>5 Fakta Unik Tentang Kucing</h1>
+  <p>Kucing memiliki lebih dari 20 otot yang mengontrol telinga mereka. Mereka juga tidur rata-rata 13–16 jam sehari.</p>
+  <button onclick="startScare()">Selanjutnya</button>
+
+  <div id="jumpscare">
+    <img src="bear.gif" alt="Scary Face">
+  </div>
+
+  <audio id="scream" src="https://www.myinstants.com/media/sounds/movie_1.mp3"></audio>
+
+  <script src="kaget.js"></script>
+</body>
+</html>

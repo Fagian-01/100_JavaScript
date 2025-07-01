@@ -1,0 +1,58 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hitung Keuntungan Usaha</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #74ebd5, #ACB6E5);
+        }
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 320px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 8px 0;
+            width: 90%;
+            font-size: 1em;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #hasil {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h2>Hitung Keuntungan Usaha</h2>
+      <input type="number" id="pendapatanInput" placeholder="Masukkan total pendapatan">
+      <input type="number" id="biayaInput" placeholder="Masukkan total biaya">
+      <button onclick="hitungKeuntungan()">Hitung Keuntungan</button>
+      <div id="hasil"></div>
+    </div>
+    <script src="usaha.js"></script>
+</body>
+</html>

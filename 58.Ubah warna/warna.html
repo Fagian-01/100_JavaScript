@@ -1,0 +1,28 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubah Background</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; transition: background 0.5s; }
+        button { padding: 10px 20px; font-size: 16px; margin: 10px; cursor: pointer; border: none; border-radius: 5px; }
+        .blue { background: #007bff; color: white; }
+        .green { background: #28a745; color: white; }
+        .white { background: #6c757d; color: white; }
+    </style>
+</head>
+<body>
+    <h2>Ubah Warna Background</h2>
+    <button class="blue" onclick="ubahWarna('lightblue')">Biru Muda</button>
+    <button class="green" onclick="ubahWarna('lightgreen')">Hijau Muda</button>
+    <button class="white" onclick="ubahWarna('white')">Putih</button>
+
+    <script>
+        function ubahWarna(warna) {
+            document.body.style.backgroundColor = warna;
+        }
+    </script>
+</body>
+</html>

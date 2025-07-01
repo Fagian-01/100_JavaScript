@@ -1,0 +1,59 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kapitalisasi Kalimat</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #d3cce3, #e9e4f0);
+        }
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 320px;
+        }
+        textarea, button {
+            padding: 10px;
+            margin: 8px 0;
+            width: 90%;
+            font-size: 1em;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #6c5ce7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4834d4;
+        }
+        #hasil {
+            margin-top: 12px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            word-break: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kapitalisasi Kalimat</h2>
+        <textarea id="inputKalimat" placeholder="Masukkan kalimat di sini" rows="4"></textarea>
+        <button onclick="kapitalisasiKalimat()">Kapitalisasi</button>
+        <div id="hasil"></div>
+    </div>
+    <script src="kapital.js"></script>
+</body>
+</html>

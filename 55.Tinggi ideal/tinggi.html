@@ -1,0 +1,89 @@
+<!--Muhammad Fagian Darmawan-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Tinggi Badan Ideal</title>
+    <style>
+    body {
+      background-color: #f4f6f8;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #ffffff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #555555;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    } 
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #hasil {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #333333;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator Tinggi Badan Ideal</h2>
+
+        <label for="berat">Masukkan berat badan (kg):</label>
+        <input type="number" id="berat" step="0.01" placeholder="Contoh: 60"><br>
+
+        <label for="tinggi">Masukkan tinggi badan (cm):</label>
+        <input type="number" id="tinggi" step="0.01" placeholder="Contoh: 170"><br>
+
+        <button onclick="hitungTinggi()">Hitung Tinggi Ideal</button>
+
+        <div id="hasil"></div>
+    </div>
+
+    <script src="tinggi.js"></script>
+</body>
+</html>
